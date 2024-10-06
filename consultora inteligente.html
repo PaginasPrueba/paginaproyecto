@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLearnia</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #CFDFBA;
+    box-sizing: border-box;
+
+}
+.barraArriba {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #368F57;
+}
+.imgArriba {
+    width: 160px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+.titulo {
+    font-family: sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    padding: 20px;
+    color: #CFDFBA;
+}
+.volver {
+    padding: 20px;
+    background-color: #368F57;
+    color: #CFDFBA;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: background-color 0.3 ease, opacity 0.3 ease;
+}
+.titulo2 {
+    font-family: sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    padding: 20px;
+    color: #368F57;
+    justify-content: center;
+    text-align: center;
+    margin-right: 160px;
+}
+
+.btn {
+    width: 15%;
+    justify-content: start;
+}
+.tit2{
+    width: 85%;
+    justify-content: start;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+a :hover {
+    background-color: #5a8a6b;
+}
+a :visited {
+    text-decoration: none;
+}
+.abajo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+
+}
+
+.subtitulo {
+    margin-left: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 750;
+    color: #205534;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .volver {
+        width: 120px;
+        font-size: 20px;
+        padding: 20px;
+    }
+    .titulo2 {
+        font-size: 40px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    .imgArriba {
+        width: 120px;
+    }
+    .titulo2 {
+        font-size: 30px;
+        margin: 0;
+    }
+    .volver {
+        width: 100px;
+        font-size: 20px;
+        padding: 16px;
+    }
+    .subtitulo {
+        font-size: 26px;
+    }
+    .parrafo {
+        font-size: 16px;
+        font-weight:500;
+        display: block;
+    }
+    .cont-section img {
+        width: 180px;
+        margin-right: 20px;
+        border: #205534 4px solid;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .txtFooter {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .imgArriba {
+        width: 120px;
+    }
+    .abajo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .tit2 {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .titulo2 {
+        font-size: 20px;
+        margin: 0;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .volver {
+        width: 100px;
+        font-size: 20px;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .subtitulo {
+        font-size: 26px;
+    }
+    .parrafo {
+        font-size: 16px;
+        font-weight:500;
+        display: block;
+    }
+    .cont-section img {
+        width: 180px;
+        margin-right: 20px;
+        border: #205534 4px solid;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .txtFooter {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .imgArriba {
+        width: 100px;
+    }
+    .titulo {
+        font-size: 35px;
+    }
+    .abajo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .tit2 {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .titulo2 {
+        font-size: 20px;
+        margin: 0;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .volver {
+        width: 100px;
+        font-size: 20px;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .subtitulo {
+        font-size: 26px;
+        justify-content: center;
+        text-align: center;
+    }
+    .parrafo {
+        font-size: 16px;
+        font-weight:500;
+        display: block;
+    }
+    .cont-section img {
+        width: 100px;
+        margin-right: 20px;
+        border: #205534 4px solid;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .txtFooter {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+</style>
+<body>
+    <div class="barraArriba">
+        <h1 class="titulo">EcoLearnia</h1>
+        <img class="imgArriba" src="mano sosteniendo un mundo.png" alt="">
+    </div>
+    <div class="abajo">
+        <div class="btn">
+            <a href="index.html"><h2 class="volver">Volver</h2></a>
+        </div>
+        <div class="tit2">
+        <h1 class="titulo2">Consultoría Inteligente</h1>
+        </div>
+    </div>
+    <div class="contenedor">
+        <h2 class="subtitulo">PROXIMAMENTE DISPONIBLE, NO TE LO PIERDAS!!!!</h2>
+    </div>
+
+</body>
+</html>
